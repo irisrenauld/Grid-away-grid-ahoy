@@ -1,0 +1,95 @@
+body{
+    background-color: rgb(233, 245, 252);
+    margin: none;
+    padding: none;
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+div.box{
+    background-color: white;
+    border: 2px solid rgb(236, 236, 236);
+    /*margin: 2rem auto ;*/
+    margin: 20px 15px;
+    padding: 20px;
+    color: rgb(163, 163, 163);
+    border-radius: 5px;
+    max-width: 250px;
+    text-align: center;
+    display: inline-block;
+    /*flex-direction: column;*/
+    /*font-size: 0.8rem;*/
+}
+/*div.undeuxtroisquatre{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+div.cinqsixsepthuit{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}*/
+h2{
+    color: rgb(105, 105, 105);
+    font-weight: 500;
+}
+/*ligne*/
+div hr{
+    margin: 0 80px;
+}
+/*button*/
+div button{
+    background-color: white;
+    border: 2px solid white;
+    padding: 10px 30px;
+    margin: 20px;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 52px;
+}
+a{
+    text-decoration: none;
+    color: gray;
+    font-size: 80%;
+    font-weight: 600;
+}
+/*image*/
+#un img{
+    border-radius: 100%;
+    width: 50%;
+    border: 3px solid rgb(255, 255, 255);
+}
+#deux img{
+    border-radius: 100%;
+    width: 50%;
+    border: 3px solid rgb(255, 255, 255);
+}
+#trois img{
+    border-radius: 100%;
+    width: 50%;
+    border: 3px solid rgb(255, 255, 255);
+}
+#quatre img{
+    border-radius: 100%;
+    width: 50%;
+    border: 3px solid rgb(255, 255, 255);
+}
+#cinq img{
+    border-radius: 100%;
+    width: 50%;
+    border: 3px solid rgb(255, 255, 255);
+}
+#six img{
+    border-radius: 100%;
+    width: 50%;
+    border: 3px solid rgb(255, 255, 255);
+}
+#sept img{
+    border-radius: 100%;
+    width: 50%;
+    border: 3px solid rgb(255, 255, 255);
+}
+#huit img{
+    border-radius: 100%;
+    width: 50%;
+    border: 3px solid rgb(255, 255, 255);
+}
