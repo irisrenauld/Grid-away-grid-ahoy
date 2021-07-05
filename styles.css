@@ -1,22 +1,52 @@
 body{
     background-color: rgb(233, 245, 252);
-    margin: none;
-    padding: none;
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+aside{
+    background-color: rgb(8, 52, 80);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2rem;
+    margin: 0 0.5rem;
+}
+aside ul{
+    margin: 0;
+    padding: 0;
+}
+aside ul li{
+    list-style: none;
+    margin: 280px 0;
+}
+aside ul li a{
+    color: white;
+    align-items: center;
 }
 div.box{
     background-color: white;
     border: 2px solid rgb(236, 236, 236);
     /*margin: 2rem auto ;*/
-    margin: 20px 15px;
-    padding: 20px;
     color: rgb(163, 163, 163);
     border-radius: 5px;
-    max-width: 250px;
     text-align: center;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
     /*flex-direction: column;*/
     /*font-size: 0.8rem;*/
+}
+div.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 50%;
+    grid-gap: 10px;
 }
 /*div.undeuxtroisquatre{
     background-color: white;
@@ -32,9 +62,11 @@ h2{
     color: rgb(105, 105, 105);
     font-weight: 500;
 }
-/*ligne*/
-div hr{
-    margin: 0 80px;
+.line{
+    width: 33%;
+    display: block;
+    height: 1px;
+    background-color: gray;
 }
 /*button*/
 div button{
@@ -45,6 +77,9 @@ div button{
     cursor: pointer;
     font-size: 1em;
     border-radius: 52px;
+}
+div button:hover{
+    background-color: rgb(71, 159, 231);
 }
 a{
     text-decoration: none;
@@ -92,4 +127,24 @@ a{
     border-radius: 100%;
     width: 50%;
     border: 3px solid rgb(255, 255, 255);
+}
+@media screen and (min-width:768px){
+    aside{
+        display: flex;
+    }
+    div.container{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-auto-rows: 50%;
+        grid-gap: 60px;
+    }
+}
+
+@media screen and (min-width:960px){
+  div.container{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-auto-rows: 50%;
+    grid-gap: 60px;
+}
 }
